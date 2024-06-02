@@ -1,4 +1,4 @@
-# CGPA Calculator f
+# CGPA Calculator 
 
 This project is a simple CGPA (Cumulative Grade Point Average) calculator for a total of 29 credits. Users can input their grade points out of 10 for each course, and the site will calculate and return their CGPA.
 
