@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background: rgb(15,30,38);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h2{
+    color: rgb(252,191,68);
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+}
+
+.input-field .label {
+    font-size: 15px;
+    margin-left: 10px;
+    position: absolute;
+    top: 15px;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.input {
+    width: 250px;
+    height: 50px;
+    border: 1px solid white;
+    outline: none;
+    padding: 0px 7px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.input:focus {
+    border: 2px solid rgb(252,191,68);
+    color: #fff;
+}
+
+.input-field .input:valid ~ .label,
+.input-field .input:focus ~ .label {
+    display: inline;
+    transition: 0.2s;
+    padding-left: 1px;
+    padding-right: 5px;
+    transform: translateY(-20px);
+    font-size: 15px;
+    background-color: rgb(15,30,38);
+}
+
+.input-field .input:valid,
+.input-field .input:focus {
+    border: 2px solid rgb(252,191,68);
+}
+
+button {
+    width: 260px;
+    height: 40px;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    bottom: 20px;
+    padding: 10px 20px;
+    background-color: rgb(252,191,68);
+    color: rgb(9,3,0);
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.result {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 30px;
+}
+
+tr {
+    height: 25px;
+}
+
+th, td {
+    border: 2px solid white;
+    color: white;
+    padding: 5px;
+}

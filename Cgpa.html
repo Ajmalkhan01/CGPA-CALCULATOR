@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CGPA Calculator</title>
+<link rel="stylesheet" href="cgpa.css">
+</head>
+<body>
+    
+<h2>CGPA CALCULATOR</h2>
+
+                <!-- Input Field-->
+<form id="cgpaForm" onsubmit="calculateCGPA(event)">
+   <div class="input-field">
+    <input type="number" id="english" class="input" required>
+     <label class="label" for="english">ENGLISH</label>
+     </div>
+    <br>
+    <div class="input-field">
+      <input type="number" id="telugu" class="input" required>
+        <label class="label" for="telugu">TELUGU</label>
+    </div><br>
+    <div class="input-field">
+      <input type="number" id="mathsA" class="input" required>
+       <label class="label" for="mathsA">MATHS A</label>
+    </div><br>
+    <div class="input-field">
+      <input type="number" id="mathsB" class="input" required>
+        <label class="label" for="mathsB">MATHS B</label>
+    </div><br>
+    <div class="input-field">
+        <input type="number" id="physics" class="input" required>
+            <label class="label" for="physics">PHYSICS</label>
+    </div><br>
+    <div class="input-field">
+        <input type="number" id="chemistry" class="input" required>
+            <label class="label" for="chemistry">CHEMISTRY</label>
+    </div><br>
+    <div class="input-field">
+        <input type="number" id="IT" class="input" required>
+             <label class="label" for="IT">IT</label>
+    </div><br>
+    <div class="input-field">
+        <input type="number" id="chemistryLab" class="input" required>
+             <label class="label" for="chemistryLab">CHEMISTRY LAB</label>
+    </div><br>
+    <div class="input-field">
+        <input type="number" id="physicsLab" class="input" required>
+            <label class="label" for="physicsLab">PHYSICS LAB</label>
+    </div><br>
+    
+                <!-- submit button-->
+                
+    <button type="submit">Calculate CGPA</button>
+</form>
+
+
+                        <!-- CGPA result-->
+<div id="result" class="result"></div>
+
+
+                    <!-- Table -->
+                    
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>S.no</th>
+                <th>Marks Range</th>
+                <th>Letter Grade</th>
+                <th>Grade Point</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>90 - 100</td>
+                    <td>Ex</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>80 - 89</td>
+                    <td>A</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>70 - 79</td>
+                    <td>B</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>60 - 69</td>
+                    <td>C</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>50 - 59</td>
+                    <td>D</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>40 - 49</td>
+                    <td>P</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>0 - 39</td>
+                    <td>R</td>
+                    <td>0</td>
+                </tr>
+                
+                
+            </tbody>
+    </table>
+</div>
+
+
+<script src="script.js">
+</script>
+</body>
+</html>
